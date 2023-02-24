@@ -1,0 +1,23 @@
+
+"""
+print("+-------------------------------------------------------------+")
+print("| 1 |     english III                     |   Ms.Lapan        |")
+print("| 2 |     Precalculus                     |   Mrs.Gideon      |")
+print("| 3 |     Music Theory                    |   Mr.Davis        |")
+print("| 4 |   Biotechnology                     |   Ms.Palmer       |")
+print("| 5 |principles of Technolog              | MS.Garcia         |")
+print("| 6 |          Latin II                   |   Mrs.Barnett     |")
+print("| 7 |     AP US History                   |   Ms.Johannessen  |")
+print("| 8 |Business Computer Information Systems|   Mr.James        |")
+print("+-------------------------------------------------------------+")
+"""
+print("+","+",sep="------------------------------------------------------------")
+print(end="| 1 |                           English III | Ms.Lapan       |""\n")
+print(end="| 2 |                           Precalculus |Mrs.Gideon      |""\n")
+print(end="| 3 |                           Music Theory| Mr.Davis       |""\n")
+print(end="| 4 |                         Biotechnology |Ms.Palmer       |""\n")
+print(end="| 5 |             Principles Of Technology  | Ms.Garcia      |""\n")
+print(end="| 6 |                               Latin II|Mrs.Barnett     |""\n")
+print(end="| 7 |                          AP US History| Ms.Johannessen |""\n")
+print(end="| 8 |Bussiness Computer Information Systems |Mrs.James       |""\n")
+print("+","+",sep="------------------------------------------------------------")

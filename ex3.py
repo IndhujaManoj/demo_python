@@ -1,0 +1,6 @@
+name=input("Hello, What is your name? \n")
+print("hi",name,'!',end="")
+old=int(input("How old are you?:\n"))
+print("so, you are",old,",eh? Thats not old at all! \n How much do you make,",name,"?")
+x=input()
+print(x,"! I hope thats per hour and not per year!LOL!")

@@ -1,0 +1,5 @@
+print("Ye Olde keychain shoppe")
+print("1.Add keychain to order")
+print("2.Remove keychain from order")
+print("3.View current order")
+print("4.Checkout")

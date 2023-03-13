@@ -1,53 +1,37 @@
-add = 0
-reduce = 0
-cost = 0
-
+current_number=0
+price_perkeychain=10
 def add_keychain():
-    global reduce
-    global add
-    add = int(input("You have {} keychains. How many to add? ".format(reduce)))
-    reduce += add
-    print("Now you have {} keychains.".format(reduce))
+    num_keychain=int(input("how many keychain would you like to add?:"))
+    global keychains
+    keychains= current_number + num_keychain
+    print("Now you have",keychains," keychains")
+    return keychains
+add_keychain()
+print("______________________________________________________________________________________")
+def remove_keychains():
+    num_remove=int(input("How many number of keychains would you like to remove?:"))
+    global remove
+    remove=keychains-num_remove
+    print("Now you have currently ",remove,"number of keychains. ")
+    return remove
+remove_keychains()
+print("______________________________________________________________________________________")
 
-def remove_keychain():
-    global reduce
-    remove = int(input("You have {} keychains. How many to remove? ".format(reduce)))
-    reduce -= remove
-    print("Now you have {} keychains.".format(reduce))
-
-def current_order():
-    global reduce
-    global cost
-    cost = 10 * reduce
-    print("Now you have {} keychains.".format(reduce))
-    print("Keychains cost $10 each.")
-    print("Total cost is: ${}.".format(cost))
+def view_order():
+    print("Now you have",remove,"number of keychains in the order.")
+    print("price per keychain is $ 10.")
+    global total_cost
+    total_cost=remove * price_perkeychain
+    print("The total cost of the keychain is $",total_cost)
+view_order()
+print("______________________________________________________________________________________")
 
 def checkout():
-    global reduce
-    global cost
-    name = input("What is your name? ")
-    print("You have {} keychains.".format(reduce))
-    print("Keychains cost $10 each.")
-    print("Total cost is: ${}.".format(cost))
-    print("Thank you for your order, {}.".format(name))
+    name=input("Enter your name:")
+    print("Hi",name,"now you have",remove,"number of keychain")
+    print("Price per keychain is $10")
+    print("total cost of the order is ",total_cost)
+    print("Thankyou ",name,"for ordering......")
+checkout()    
 
-while True:
-    print("Ye Olde Keychain Shoppe")
-    print("1. Add keychains to order")
-    print("2. Remove keychains from order")
-    print("3. View current order")
-    print("4. Checkout")
-    choice = int(input("Please enter your choice: "))
-
-    if choice == 1:
-        add_keychain()
-    elif choice == 2:
-        remove_keychain()
-    elif choice == 3:
-        current_order()
-    elif choice == 4:
-        checkout()
-        break
-    else:
-        print("Please enter a valid choice.")
+    
